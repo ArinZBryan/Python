@@ -3,7 +3,12 @@ screen=turtle.Screen()
 Turtle=turtle.Turtle()
 Turtle.speed(0)
 Turtle.ht()
-Smooth=input("Do you want curvy letters? Y/N")
+Smoothq=input("Do you want curvy letters? Y/N")
+if Smoothq == 'Y' or Smoothq == 'y' or Smoothq == 'YES' or Smoothq == 'yes' or Smoothq == 'Yes' or Smoothq == 'yEs' or Smoothq == 'yeS' or Smoothq == 'YEs' or Smoothq == 'yES' or Smoothq == 'YeS' or Smoothq == 'YEE' or Smoothq == 'yee' or Smoothq == 'Yee' or Smoothq == 'yEe' or Smoothq == 'yeE' or Smoothq == 'YEe' or Smoothq == 'yEE' or Smoothq == 'YeE':
+        Smooth = 'Y'
+else:
+        Smooth = 'N'
+
 def A():
 	Turtle.reset()
 	Turtle.rt(-75);Turtle.fd(60);Turtle.rt(150);Turtle.fd(60);Turtle.rt(180);Turtle.fd(20);Turtle.rt(105);Turtle.fd(-20)
@@ -84,21 +89,32 @@ def P():
 def Q():
         if Smooth == 'Y':
                 Turtle.reset()
-                Turtle.circle
-        Turtle.reset()
-	Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(20);Turtle.rt(90);Turtle.fd(20);Turtle.fd(-40)
+                Turtle.circle(30,360);Turtle.circle(30,52.5);Turtle.rt(90);Turtle.fd(15);Turtle.fd(-30)
+        else:
+                Turtle.reset()
+                Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(40);Turtle.rt(-45);Turtle.fd(20);Turtle.rt(90);Turtle.fd(20);Turtle.fd(-40)
 def R():
-	Turtle.reset()
-	Turtle.rt(-90);Turtle.fd(60);Turtle.rt(90);Turtle.fd(20);Turtle.rt(45);Turtle.fd(15);Turtle.rt(45);Turtle.fd(12.5);Turtle.rt(45);Turtle.fd(15);Turtle.rt(45);Turtle.fd(20);Turtle.rt(225);Turtle.fd(40)
+        if Smooth == 'Y':
+                Turtle.reset()
+                Turtle.rt(-90);Turtle.fd(60);Turtle.rt(90);Turtle.fd(20);Turtle.circle(-15,180);Turtle.fd(20);Turtle.rt(225);Turtle.fd(50)
+        else:
+                Turtle.reset()
+                Turtle.rt(-90);Turtle.fd(60);Turtle.rt(90);Turtle.fd(20);Turtle.rt(45);Turtle.fd(15);Turtle.rt(45);Turtle.fd(12.5);Turtle.rt(45);Turtle.fd(15);Turtle.rt(45);Turtle.fd(20);Turtle.rt(225);Turtle.fd(40)
 def S():
-	Turtle.reset()
-	Turtle.fd(30);Turtle.rt(-45);Turtle.fd(10);Turtle.rt(-45);Turtle.fd(25);Turtle.rt(-45);Turtle.fd(10);Turtle.rt(-45);Turtle.fd(25);Turtle.rt(45);Turtle.fd(10);Turtle.rt(45);Turtle.fd(25);Turtle.rt(45);Turtle.fd(10);Turtle.rt(45);Turtle.fd(30)
+        if Smooth == 'Y':
+                Turtle.fd(30);Turtle.circle(22.5,180);Turtle.fd(30);Turtle.circle(-22.5,180);Turtle.fd(30)
+        else:
+                Turtle.reset()
+                Turtle.fd(30);Turtle.rt(-45);Turtle.fd(10);Turtle.rt(-45);Turtle.fd(25);Turtle.rt(-45);Turtle.fd(10);Turtle.rt(-45);Turtle.fd(25);Turtle.rt(45);Turtle.fd(10);Turtle.rt(45);Turtle.fd(25);Turtle.rt(45);Turtle.fd(10);Turtle.rt(45);Turtle.fd(30)
 def T():
 	Turtle.reset()
 	Turtle.rt(-90);Turtle.fd(60);Turtle.rt(90);Turtle.fd(15);Turtle.fd(-30)
 def U():
-	Turtle.reset()
-	Turtle.fd(25);Turtle.rt(-45);Turtle.fd(15);Turtle.rt(-45);Turtle.fd(50);Turtle.rt(180);Turtle.fd(50);Turtle.rt(45);Turtle.fd(15);Turtle.rt(45);Turtle.fd(25);Turtle.rt(45);Turtle.fd(15);Turtle.rt(45);Turtle.fd(50)
+        if Smooth == 'Y':
+                Turtle.circle(30,90);Turtle.circle(30,-180,);Turtle.fd(-40);Turtle.rt(180);Turtle.fd(-40);Turtle.circle(-30,-180);Turtle.fd(-40)
+        else:
+                Turtle.reset()
+                Turtle.fd(25);Turtle.rt(-45);Turtle.fd(15);Turtle.rt(-45);Turtle.fd(50);Turtle.rt(180);Turtle.fd(50);Turtle.rt(45);Turtle.fd(15);Turtle.rt(45);Turtle.fd(25);Turtle.rt(45);Turtle.fd(15);Turtle.rt(45);Turtle.fd(50)
 def V():
 	Turtle.reset()
 	Turtle.rt(-60);Turtle.fd(80);Turtle.fd(-80);Turtle.rt(120);Turtle.fd(-80)
